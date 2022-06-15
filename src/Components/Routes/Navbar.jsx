@@ -12,11 +12,14 @@ import {
   Stack,
   Image,
   Input,
-  ButtonGroup
-
+  ButtonGroup,
+  Divider,
+  Center,
+  Icon
 
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, SearchIcon} from '@chakra-ui/icons';
+import { AiOutlineShoppingCart , AiOutlineSmile } from "react-icons/ai";
 
 const Links = ['Dashboard', 'Projects', 'Team'];
 
@@ -59,10 +62,13 @@ const Navbar = () =>{
                   fontSize={"larger"}>
             <Input 
             height={"40px"}
-            width={"150px"}
+            width={"180px"}
             border={"1px solid white"}
             placeholder={"Deliver to"}>
             </Input>
+            <Center height='25px'>
+               <Divider orientation='vertical' />
+              </Center>
             <Input 
             height={"40px"} 
             width={"400px"}
@@ -73,7 +79,6 @@ const Navbar = () =>{
              height={"40px"} 
              width={"60px"}
              border={"1px solid white"} />
-            
             </HStack>
             </HStack>
             <HStack
@@ -87,22 +92,30 @@ const Navbar = () =>{
         <Flex width={"80%"} 
         margin={"auto"}  justifyContent={"space-between"}>
       
-             <HStack>
+             <HStack paddingBottom={"20px"}>
               <ButtonGroup spacing={10} align='center'>
-              < Button  colorScheme={"rgb(16,132,126)"} color={"white"} >Order Medicines</Button>
-              < Button colorScheme={"rgb(16,132,126)"} color={"white"} >Healthcare Products</Button>
-              < Button colorScheme={"rgb(16,132,126)"} color={"white"} >Lab Tests</Button>
-              < Button colorScheme={"rgb(16,132,126)"} color={"white"} >RTPCR</Button>
+              < Button  colorScheme={"rgb(16,132,126)"} color={"white"} variant='link'>Order Medicines</Button>
+              < Button colorScheme={"rgb(16,132,126)"} color={"white"} variant='link'>Healthcare Products</Button>
+              < Button colorScheme={"rgb(16,132,126)"} color={"white"} variant='link'>Lab Tests</Button>
+              < Button colorScheme={"rgb(16,132,126)"} color={"white"} variant='link'>RTPCR</Button>
               </ButtonGroup>
              </HStack>
+           
 
-             <HStack>
+             <HStack paddingBottom={"20px"}>
               <ButtonGroup spacing={10} align='center'>
+             
+        
+             <Button colorScheme={"rgb(16,132,126)"} color={"white"} variant='link'>Offers</Button>
              < ButtonGroup >
-             <Button colorScheme={"rgb(16,132,126)"} color={"white"}>Offers</Button>
-             </ButtonGroup>
-              < Button colorScheme={"rgb(16,132,126)"} color={"white"} >Login/Signup</Button>
-              < Button colorScheme={"rgb(16,132,126)"} color={"white"} >Cart</Button>
+              <Icon as={AiOutlineSmile} color={"white"} margin={"0px"} w={5} h={6}></Icon>
+              < Button colorScheme={"rgb(16,132,126)"} color={"white"} variant='link'>Login/Signup</Button>
+              </ButtonGroup >
+              <ButtonGroup display={"flex"}>
+                < Icon as={AiOutlineShoppingCart} color={"white"} w={6} h={6}></Icon>
+                < Button colorScheme={"rgb(16,132,126)"} color={"white"} variant='link'>Cart</Button>
+              </ButtonGroup>
+              
               </ButtonGroup>
              </HStack>
         </Flex>
