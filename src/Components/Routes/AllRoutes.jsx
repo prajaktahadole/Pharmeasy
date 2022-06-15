@@ -11,6 +11,7 @@ import Signin from "../../Pages/Registration/Signin/signin";
 import SingleProduct from "../../Pages/SingleProduct/SingleProduct";
 import Cart from "../../Pages/Cart/Cart";
 
+
 const AllRoutes = () =>{
     return <div>
             <Navbar></Navbar>
@@ -24,8 +25,8 @@ const AllRoutes = () =>{
                 <Route path="/signin" element={<Signin/>}></Route>
                 <Route path="/singleproducts" element={<SingleProduct/>}></Route>  
                 <Route path="/cart" element={<Cart/>}></Route>  
-
             </Routes>
+            
     </div>
 }
 
