@@ -25,7 +25,7 @@ const settings = {
 const  Carousel1 = () =>{
      // As we have used custom buttons, we need a reference variable to
   // change the state
-  const [slider, setSlider] = React.useState(!null);
+  const [slider, setSlider] = React.useState();
 
   // These are the breakpoints which changes the position of the
   // buttons as the screen size changes
@@ -34,16 +34,17 @@ const  Carousel1 = () =>{
 
   // These are the images used in the slide
   const cards = [
-    '',
-    '',
-    '',
+    'https://cms-contents.pharmeasy.in/banner/a43298bb645-MED25_Dweb_min.jpg?dim=1440x0&dpr=1&q=100',
+    'https://cms-contents.pharmeasy.in/banner/374ed4b3c4e-Liveasy_diabetic_Dweb.jpg?dim=1440x0&dpr=1&q=100',
+    
   ];
 
   return (
     <Box
       position={'relative'}
-      height={'350px'}
-      width={'full'}
+      height={'300px'}
+      width={'fult'}
+      objectFit={'fit'}
       overflow={'hidden'}>
       {/* CSS files for react-slick */}
       <link
@@ -88,7 +89,7 @@ const  Carousel1 = () =>{
         {cards.map((url, index) => (
           <Box
             key={index}
-            height={'6xl'}
+            height={'sm'}
             position="relative"
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
