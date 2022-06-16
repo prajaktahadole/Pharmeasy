@@ -10,7 +10,7 @@ import Login from "../../Pages/Registration/Login/login";
 import Signin from "../../Pages/Registration/Signin/signin";
 import SingleProduct from "../../Pages/SingleProduct/SingleProduct";
 import Cart from "../../Pages/Cart/Cart";
-
+import Footer from "../../Pages/Footer/footer";
 
 const AllRoutes = () =>{
     return <div>
@@ -26,6 +26,7 @@ const AllRoutes = () =>{
                 <Route path="/singleproducts" element={<SingleProduct/>}></Route>  
                 <Route path="/cart" element={<Cart/>}></Route>  
             </Routes>
+            <Footer></Footer>
             
     </div>
 }

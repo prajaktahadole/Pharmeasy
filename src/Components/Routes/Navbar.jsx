@@ -108,7 +108,7 @@ const Navbar = () =>{
         
              <Button colorScheme={"rgb(16,132,126)"} color={"white"} variant='link'>Offers</Button>
              < ButtonGroup >
-              <Icon as={AiOutlineSmile} color={"white"} margin={"0px"} w={5} h={6}></Icon>
+              <Icon as={AiOutlineSmile} color={"white"}  w={5} h={6}></Icon>
               < Button colorScheme={"rgb(16,132,126)"} color={"white"} variant='link'>Login/Signup</Button>
               </ButtonGroup >
               <ButtonGroup display={"flex"}>
