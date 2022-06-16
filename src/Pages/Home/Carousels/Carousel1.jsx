@@ -44,7 +44,7 @@ const  Carousel1 = () =>{
       position={'relative'}
       height={'300px'}
       width={'fult'}
-      objectFit={'fit'}
+      objectFit={'contain'}
       overflow={'hidden'}>
       {/* CSS files for react-slick */}
       <link
@@ -94,6 +94,7 @@ const  Carousel1 = () =>{
             backgroundPosition="center"
             backgroundRepeat="no-repeat"
             backgroundSize="cover"
+            objectFit={"contain"}
             backgroundImage={`url(${url})`}
           />
         ))}
