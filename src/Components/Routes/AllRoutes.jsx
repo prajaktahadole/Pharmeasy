@@ -11,6 +11,7 @@ import Signin from "../../Pages/Registration/Signin/signin";
 import SingleProduct from "../../Pages/SingleProduct/SingleProduct";
 import Cart from "../../Pages/Cart/Cart";
 import Footer from "../../Pages/Footer/footer";
+import Category from "../../Pages/Category/Category";
 
 const AllRoutes = () =>{
     return <div>
@@ -18,6 +19,7 @@ const AllRoutes = () =>{
             <Routes>
                 <Route path="/" element={<Home/>}></Route>
                 <Route path="/order" element={<Order/>}></Route>
+                <Route path="/category" element={<Category/>}></Route> 
                 <Route path="/products" element={<Products/>}></Route> 
                 <Route path="/labtest" element={<LabTest/>}></Route>
                 <Route path="/offer" element={<Offers/>}></Route>
