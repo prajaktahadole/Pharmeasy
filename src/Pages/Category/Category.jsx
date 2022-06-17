@@ -14,8 +14,12 @@ import {
 const   Category = () =>{
   
     return <>
-          CategoryData
-        <Box>
+         
+        <Box 
+        width={"50%"}
+        margin={"auto"}
+        marginTop={"50px"}
+        marginBottom={"50px"}>
         <Carousel2></Carousel2>
         </Box>
         <Box 
@@ -24,7 +28,7 @@ const   Category = () =>{
                 display={"grid"} 
                 gridTemplateColumns={'repeat(3, 1fr)'}
                 gridGap={6}
-                border={"1px solid" }
+                marginBottom={"50px"}
                >
         {CategoryData.map((e) => (
                 <HStack className='homeCircleinner' key={e.Id}
