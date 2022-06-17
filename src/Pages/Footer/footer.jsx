@@ -55,18 +55,18 @@ const Footer = () =>{
             <SimpleGrid columns={{ base: 1, sm: 2, md: 4 }} spacing={8}>
               <Stack align={'flex-start'}>
                 <Heading as='h5' size='sm'>Company</Heading>
-                <Link href={'#'}>About Us</Link>
-                <Link href={'#'}>Careers</Link>
-                <Link href={'#'}>Blog</Link>
-                <Link href={'#'}>Partner with PharmEasy</Link>
-                <Link href={'#'}>Sell at PharmEasy</Link>
+                <Link href={'/'}>About Us</Link>
+                <Link href={'/'}>Careers</Link>
+                <Link href={'/'}>Blog</Link>
+                <Link href={'/'}>Partner with PharmEasy</Link>
+                <Link href={'/products'}>Sell at PharmEasy</Link>
 
                 <Heading as='h5' size='sm'>Our Services</Heading>
-                <Link href={'#'}>Order Medicine</Link>
-                <Link href={'#'}>Health Products</Link>
-                <Link href={'#'}>Lab Tests</Link>
-                <Link href={'#'}>Contact Us</Link>
-                <Link href={'#'}>Find Nearest Colletion Center</Link>
+                <Link href={'/order'}>Order Medicine</Link>
+                <Link href={'/category'}>Health Products</Link>
+                <Link href={'/labtest'}>Lab Tests</Link>
+                <Link href={'/'}>Contact Us</Link>
+                <Link href={'/'}>Find Nearest Colletion Center</Link>
               </Stack>
     
               <Stack align={'flex-start'}>
