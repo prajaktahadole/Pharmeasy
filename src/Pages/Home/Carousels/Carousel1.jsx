@@ -29,14 +29,14 @@ const  Carousel1 = () =>{
 
   // These are the breakpoints which changes the position of the
   // buttons as the screen size changes
-  const top = useBreakpointValue({ base: '90%', md: '50%' });
-  const side = useBreakpointValue({ base: '30%', md: '10px' });
+  const top = useBreakpointValue({ base: '70%', md: '50%' });
+  const side = useBreakpointValue({ base: '50%', md: '10px' });
 
   // These are the images used in the slide
   const cards = [
     'https://cms-contents.pharmeasy.in/banner/a43298bb645-MED25_Dweb_min.jpg?dim=1440x0&dpr=1&q=100',
     'https://cms-contents.pharmeasy.in/banner/374ed4b3c4e-Liveasy_diabetic_Dweb.jpg?dim=1440x0&dpr=1&q=100',
-    
+    'https://cms-contents.pharmeasy.in/banner/c5bfba7b457-Dweb.jpg?dim=1440x0&dpr=1&q=100'
   ];
 
   return (
