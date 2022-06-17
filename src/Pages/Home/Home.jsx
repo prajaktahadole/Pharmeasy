@@ -1,5 +1,5 @@
 import React from "react";
-import Carousel1 from "./Carousels/Carousel1"
+import {Carousel1} from './Carousels/Carousel1'
 
 const Home = () =>{
     return <div>
