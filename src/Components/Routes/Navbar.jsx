@@ -15,8 +15,7 @@ import {
   ButtonGroup,
   Divider,
   Center,
-  Icon,
-  LinkBox
+  Icon
 
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, SearchIcon} from '@chakra-ui/icons';
@@ -48,15 +47,13 @@ const Navbar = () =>{
           />
           <HStack spacing={8} alignItems={'center'}>
             <HStack >
-           
-           <Image 
+            <Image 
               width={"150px"}
               height={"50px"}
               objectFit='fit'
               marginRight={"50px"}
               src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt='Logo' >
             </Image>
-          
           
             <HStack bg={useColorModeValue('rgb(255,255,255)', 'rgb(255,255,255)') }
                   spacing={0}
@@ -97,30 +94,30 @@ const Navbar = () =>{
       
              <HStack paddingBottom={"20px"} spacing={10} align='center'>
             
-              < Link href='/order'  colorScheme={"rgb(16,132,126)"} color={"white"} >Order Medicines</Link >
-              < Link href='/category' colorScheme={"rgb(16,132,126)"} color={"white"} >Healthcare Products</Link>
-              < Link href='/labtest' colorScheme={"rgb(16,132,126)"} color={"white"} >Lab Tests</Link >
-              < Link href='/' colorScheme={"rgb(16,132,126)"} color={"white"} >RTPCR</Link >
+              < Link href="/order"  colorScheme={"rgb(16,132,126)"} color={"white"} variant='link'>Order Medicines</Link >
+              < Link href="/category" colorScheme={"rgb(16,132,126)"} color={"white"} variant='link'>Healthcare Products</Link >
+              < Link href="/labtest" colorScheme={"rgb(16,132,126)"} color={"white"} variant='link'>Lab Tests</Link >
+              < Link href="/labtest" colorScheme={"rgb(16,132,126)"} color={"white"} variant='link'>RTPCR</Link>
              
              </HStack>
            
 
-        <HStack paddingBottom={"20px"}>
-        <ButtonGroup spacing={10} align='center'>
+             <HStack paddingBottom={"20px"}>
+              <ButtonGroup spacing={10} align='center'>
              
-
-             <Link href='/offer' colorScheme={"rgb(16,132,126)"} color={"white"} variant='link'>Offers</Link>
-             <ButtonGroup  >
+        
+             <Link href="/offer" colorScheme={"rgb(16,132,126)"} color={"white"} variant='link'>Offers</Link>
+             < ButtonGroup >
               <Icon as={AiOutlineSmile} color={"white"}  w={5} h={6}></Icon>
-              < Link href='/login' colorScheme={"rgb(16,132,126)"} color={"white"} variant='link'>Login/Signup</Link>
-             </ButtonGroup >
+              < Link  href="/login" colorScheme={"rgb(16,132,126)"} color={"white"} variant='link'>Login/Signup</Link>
+              </ButtonGroup >
               <ButtonGroup display={"flex"}>
                 < Icon as={AiOutlineShoppingCart} color={"white"} w={6} h={6}></Icon>
-                < Link href='/cart' colorScheme={"rgb(16,132,126)"} color={"white"} variant='link'>Cart</Link>
+                < Link  href="/cart" colorScheme={"rgb(16,132,126)"} color={"white"} variant='link'>Cart</Link>
               </ButtonGroup>
-
-        </ButtonGroup>
-        </HStack>
+              
+              </ButtonGroup>
+             </HStack>
         </Flex>
 
        </Box>
