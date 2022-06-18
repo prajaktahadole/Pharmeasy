@@ -7,7 +7,7 @@ import Order from "../../Pages/Order/Order";
 import LabTest from "../../Pages/LabTest/labtest";
 import Offers from "../../Pages/Offers/offers";
 import Login from "../../Pages/Registration/Login/login";
-import Signin from "../../Pages/Registration/Signin/signin";
+import Signup from "../../Pages/Registration/Signup/signup";
 import SingleProduct from "../../Pages/SingleProduct/SingleProduct";
 import Cart from "../../Pages/Cart/Cart";
 import Footer from "../../Pages/Footer/footer";
@@ -24,7 +24,7 @@ const AllRoutes = () =>{
                 <Route path="/labtest" element={<LabTest/>}></Route>
                 <Route path="/offer" element={<Offers/>}></Route>
                 <Route path="/login" element={<Login/>}></Route>
-                <Route path="/signin" element={<Signin/>}></Route>
+                <Route path="/signup" element={<Signup/>}></Route>
                 <Route path="/singleproducts" element={<SingleProduct/>}></Route>  
                 <Route path="/cart" element={<Cart/>}></Route>  
             </Routes>
