@@ -4,7 +4,6 @@ import {
   Box,
   Flex,
   HStack,
-  Link,
   IconButton,
   Button,
   useDisclosure,
@@ -20,9 +19,7 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, SearchIcon} from '@chakra-ui/icons';
 import { AiOutlineShoppingCart , AiOutlineSmile } from "react-icons/ai";
-
-const Links = ['Dashboard', 'Projects', 'Team'];
-
+import {Link} from "react-router-dom"
 
 
 
@@ -90,14 +87,19 @@ const Navbar = () =>{
         </Flex>
 
         <Flex width={"80%"} 
-        margin={"auto"}  justifyContent={"space-between"}>
+            margin={"auto"} 
+            color={"white"} 
+            variant='link' 
+            justifyContent={"space-between"}
+          
+           >
       
              <HStack paddingBottom={"20px"} spacing={10} align='center'>
             
-              < Link href="/order"  colorScheme={"rgb(16,132,126)"} color={"white"} variant='link'>Order Medicines</Link >
-              < Link href="/category" colorScheme={"rgb(16,132,126)"} color={"white"} variant='link'>Healthcare Products</Link >
-              < Link href="/labtest" colorScheme={"rgb(16,132,126)"} color={"white"} variant='link'>Lab Tests</Link >
-              < Link href="/labtest" colorScheme={"rgb(16,132,126)"} color={"white"} variant='link'>RTPCR</Link>
+              < Link to="/order">Order Medicines</Link >
+              < Link to="/category">Healthcare Products</Link >
+              < Link to="/labtest" >Lab Tests</Link >
+              < Link to="/labtest" >RTPCR</Link>
              
              </HStack>
            
@@ -106,14 +108,14 @@ const Navbar = () =>{
               <ButtonGroup spacing={10} align='center'>
              
         
-             <Link href="/offer" colorScheme={"rgb(16,132,126)"} color={"white"} variant='link'>Offers</Link>
+             <Link to="/offer" >Offers</Link>
              < ButtonGroup >
-              <Icon as={AiOutlineSmile} color={"white"}  w={5} h={6}></Icon>
-              < Link  href="/login" colorScheme={"rgb(16,132,126)"} color={"white"} variant='link'>Login/Signup</Link>
+              <Icon as={AiOutlineSmile}   w={5} h={6}></Icon>
+              < Link  to="/login" >Login/Signup</Link>
               </ButtonGroup >
               <ButtonGroup display={"flex"}>
-                < Icon as={AiOutlineShoppingCart} color={"white"} w={6} h={6}></Icon>
-                < Link  href="/cart" colorScheme={"rgb(16,132,126)"} color={"white"} variant='link'>Cart</Link>
+                < Icon as={AiOutlineShoppingCart} w={6} h={6}></Icon>
+                < Link  to="/cart" >Cart</Link>
               </ButtonGroup>
               
               </ButtonGroup>
