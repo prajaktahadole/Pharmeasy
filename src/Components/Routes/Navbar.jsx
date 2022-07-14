@@ -31,7 +31,8 @@ const Navbar = () =>{
     <>
       <Box bg={useColorModeValue('rgb(16,132,126)', 'rgb(16,132,126)')} px={8} alignItems={'center'}>
        <Box margin={"auto"} textAlign={"center"}  >
-       <Flex width={"70%"} 
+       <Flex 
+        width={"70%"} 
         margin={"auto"} 
         spacing={4}
         height={"80px"}>
@@ -44,6 +45,7 @@ const Navbar = () =>{
           />
           <HStack spacing={8} alignItems={'center'}>
             <HStack >
+            <Box onClick={()=>handlMain()} href="/">
             <Image 
               width={"150px"}
               height={"50px"}
@@ -51,6 +53,7 @@ const Navbar = () =>{
               marginRight={"50px"}
               src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt='Logo' >
             </Image>
+            </Box>
           
             <HStack bg={useColorModeValue('rgb(255,255,255)', 'rgb(255,255,255)') }
                   spacing={0}
