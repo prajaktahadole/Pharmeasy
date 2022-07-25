@@ -11,9 +11,6 @@ const products = [
         avator: "https://cms-contents.pharmeasy.in/carousel_item/e8c11c3d8e1-Wellman_Dweb.jpg?dim=146x0&dpr=1&q=100",
     },
     {
-        avator: "https://cms-contents.pharmeasy.in/carousel_item/e8c11c3d8e1-Wellman_Dweb.jpg?dim=146x0&dpr=1&q=100",
-    },
-    {
         avator: "https://cms-contents.pharmeasy.in/carousel_item/c572570b5ce-Liveasy.jpg?dim=146x0&dpr=1&q=100",
     },
     {
@@ -35,13 +32,7 @@ const products = [
         avator: "https://cms-contents.pharmeasy.in/carousel_item/9d406684215-Featured-brand_web_Plum.jpg?dim=146x0&dpr=2&q=100",
     },
     {
-        avator: "https://cms-contents.pharmeasy.in/carousel_item/9d406684215-Featured-brand_web_Plum.jpg?dim=146x0&dpr=2&q=100",
-    },
-    {
         avator: "https://cms-contents.pharmeasy.in/carousel_item/0e3affec097-The_Natural_Wash_Dweb.jpg?dim=146x0&dpr=2&q=100",
-    },
-    {
-        avator: "https://cms-contents.pharmeasy.in/carousel_item/f8493a13be2-web_Pigeon.jpg?dim=146x0&dpr=2&q=100",
     },
     {
         avator: "https://cms-contents.pharmeasy.in/carousel_item/f8493a13be2-web_Pigeon.jpg?dim=146x0&dpr=2&q=100",
@@ -95,7 +86,7 @@ const Block2 = () => {
     };
 
     return (
-        <div>
+        <div  style={{ width: "93%", MaxHeight: "98%" , margin: "auto"}} >
             <div>
                 <Slide {...properties}>
                     {

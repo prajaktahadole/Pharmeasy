@@ -1,109 +1,37 @@
-import Carousel from "react-bootstrap/Carousel";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState } from 'react';
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css'
+
+const slideImages = [
+  "https://cms-contents.pharmeasy.in/banner/c1642e659f5-BeautyLauch-SB-June22.jpg",
+  "https://cms-contents.pharmeasy.in/banner/3bdb0db12e1-ABZORB-JUL.jpg",
+  "https://cms-contents.pharmeasy.in/banner/33ce2b5ba8b-Friends-CB-May22.jpg",
+  "https://cms-contents.pharmeasy.in/banner/c4d259a9077-OneTouchSPS-CB-July22.png",
+  "https://cms-contents.pharmeasy.in/banner/b1cd3f940f5-Evion-CB.jpg",
+  "https://cms-contents.pharmeasy.in/banner/a86af72f350-Huggies-CB-May22.jpg",
+  "https://cms-contents.pharmeasy.in/banner/438cbe12594-BachatDay-CB-26July.jpg?dim=700x0&dpr=1&q=100"
+ 
+];
+
 
 export const Carousel2 = () => {
+  
+  const [autoplay, setAutoplay] = useState(true);
+
   return (
-    <div>
-      <Carousel>
-        <Carousel.Item>
-          <img
-            className="caro-block"
-            src="https://cms-contents.pharmeasy.in/banner/ea0bf711eed-Vicks-cb-may.jpg"
-            alt="First slide"
-          />
-        </Carousel.Item>
+    <>
+    <div style={{ width: "100%", MaxHeight: "98%" , margin: "auto"}}  >
+        <Slide autoplay={autoplay}>
+            {slideImages.map((item) => (
+                <div className="each-slide" >
+                    <div style={{ width: "100%", height: "auto" }}>
+                        <img src={item} style={{ maxWidth: "100%", maxHeight: "100%" }} />
+                    </div>
+                </div>
+            ))}
 
-        <Carousel.Item>
-          <img
-            className="caro-block"
-            src="https://cms-contents.pharmeasy.in/banner/627c570ceec-Plum-M-M.jpg"
-            alt="Second slide"
-          />
-        </Carousel.Item>
-
-        <Carousel.Item>
-          <img
-            className="caro-block"
-            src="https://cms-contents.pharmeasy.in/banner/8aa83ea6c7e-Moov-June-Coupon.jpg"
-            alt="Third slide"
-          />
-        </Carousel.Item>
-
-        <Carousel.Item>
-          <img
-            className="caro-block"
-            src="https://cms-contents.pharmeasy.in/banner/de6cc279933-Upakarma-CB-june.jpg"
-            alt="Third slide"
-          />
-        </Carousel.Item>
-
-
-        <Carousel.Item>
-          <img
-            className="caro-block"
-            src="https://cms-contents.pharmeasy.in/banner/3ab35ad135a-Cremaffin-June-SRP.jpg"
-            alt="Third slide"
-          />
-        </Carousel.Item>
-
-
-        <Carousel.Item>
-          <img
-            className="caro-block"
-            src="https://cms-contents.pharmeasy.in/banner/3ab35ad135a-Cremaffin-June-SRP.jpg"
-            alt="Third slide"
-          />
-        </Carousel.Item>
-
-
-        <Carousel.Item>
-          <img
-            className="caro-block"
-            src="https://cms-contents.pharmeasy.in/banner/0c2c1348a87-OneTouch-CB-June22.png"
-            alt="Third slide"
-          />
-        </Carousel.Item>
-
-
-
-        <Carousel.Item>
-          <img
-            className="caro-block"
-            src="https://cms-contents.pharmeasy.in/banner/7076307845f-Johnson-CB-Mar22.jpg"
-            alt="Third slide"
-          />
-        </Carousel.Item>
-
-
-
-        <Carousel.Item>
-          <img
-            className="caro-block"
-            src="https://cms-contents.pharmeasy.in/banner/26d88c347d7-Colgate-Diab.jpg"
-            alt="Third slide"
-          />
-        </Carousel.Item>
-
-
-        <Carousel.Item>
-          <img
-            className="caro-block"
-            src="https://cms-contents.pharmeasy.in/banner/e13fa8363bf-EQUAL-JUNE-CB.png"
-            alt="Third slide"
-          />
-        </Carousel.Item>
-
-
-        <Carousel.Item>
-          <img
-            className="caro-block"
-            src="https://cms-contents.pharmeasy.in/banner/5d4b67a22d1-Khadi-CB-June.jpg"
-            alt="Third slide"
-          />
-        </Carousel.Item>
-
-      
-      </Carousel>
-    </div>
+        </Slide>
+    </div >
+</>
   );
 };

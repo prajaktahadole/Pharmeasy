@@ -3,6 +3,9 @@ import { Slide } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 
 const slideImages = [
+    "https://cms-contents.pharmeasy.in/banner/3465a6ba646-WEBPAGE.jpg?dim=1440x0&dpr=1&q=100",
+    "https://cms-contents.pharmeasy.in/banner/61862f21513-DiagDweb.jpg?dim=1440x0&dpr=1&q=100",
+    "https://cms-contents.pharmeasy.in/banner/31e6940d27f-WP.jpg?dim=1440x0&dpr=1&q=100",
     "https://cms-contents.pharmeasy.in/banner/a2915b53111-Dweb.jpg?dim=1440x0&dpr=1&q=100",
     "https://cms-contents.pharmeasy.in/banner/5aeebb1a134-Dweb2.jpg?dim=1440x0&dpr=1&q=100",
     "https://cms-contents.pharmeasy.in/banner/b287e359a6f-Dweb.jpg?dim=1440x0&dpr=1&q=100",
@@ -17,7 +20,7 @@ export const Carousel1 = () => {
 
   return (
     <>
-    <div style={{ width: "99%", MaxHeight: "98%" }}>
+    <div style={{ width: "100%", MaxHeight: "98%" , margin: "auto"}}  >
         <Slide autoplay={autoplay}>
             {slideImages.map((item) => (
                 <div className="each-slide" >

@@ -14,7 +14,7 @@ import {
   ButtonGroup,
   Divider,
   Center,
-  Icon
+  Icon,
 
 } from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, SearchIcon} from '@chakra-ui/icons';
@@ -45,15 +45,15 @@ const Navbar = () =>{
           />
           <HStack spacing={8} alignItems={'center'}>
             <HStack >
-            <Box onClick={()=>handlMain()} href="/">
-            <Image 
-              width={"150px"}
-              height={"50px"}
-              objectFit='fit'
-              marginRight={"50px"}
-              src="https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png" alt='Logo' >
-            </Image>
-            </Box>
+            <Link to="/">
+                <Image  
+                    width={"150px"}
+                    height={"50px"}
+                    objectFit='fit'
+                    marginRight={"50px"}
+                 src='https://assets.pharmeasy.in/web-assets/dist/fca22bc9.png' alt='logo' />
+            </Link>
+            
           
             <HStack bg={useColorModeValue('rgb(255,255,255)', 'rgb(255,255,255)') }
                   spacing={0}
