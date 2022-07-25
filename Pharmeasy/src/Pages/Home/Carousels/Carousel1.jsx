@@ -1,36 +1,35 @@
-import Carousel from "react-bootstrap/Carousel";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState } from 'react';
+import { Slide } from 'react-slideshow-image';
+import 'react-slideshow-image/dist/styles.css'
+
+const slideImages = [
+    "https://cms-contents.pharmeasy.in/banner/a2915b53111-Dweb.jpg?dim=1440x0&dpr=1&q=100",
+    "https://cms-contents.pharmeasy.in/banner/5aeebb1a134-Dweb2.jpg?dim=1440x0&dpr=1&q=100",
+    "https://cms-contents.pharmeasy.in/banner/b287e359a6f-Dweb.jpg?dim=1440x0&dpr=1&q=100",
+    "https://cms-contents.pharmeasy.in/banner/a16798e4a2f-Dweb.jpg?dim=1440x0&dpr=1&q=100",
+    "https://cms-contents.pharmeasy.in/banner/a16798e4a2f-Dweb.jpg?dim=1440x0&dpr=1&q=100"
+];
+
+
 
 export const Carousel1 = () => {
+  const [autoplay, setAutoplay] = useState(true);
+
   return (
-    <div>
-      <Carousel>
-        <Carousel.Item>
-          <img
-            className="caro-block"
-            src="https://cms-contents.pharmeasy.in/banner/11968e3c347-MEGA20_Dweb.jpg?dim=1440x0&dpr=1&q=100"
-            alt="First slide"
-          />
-        </Carousel.Item>
+    <>
+    <div style={{ width: "99%", MaxHeight: "98%" }}>
+        <Slide autoplay={autoplay}>
+            {slideImages.map((item) => (
+                <div className="each-slide" >
+                    <div style={{ width: "100%", height: "auto" }}>
+                        <img src={item} style={{ maxWidth: "100%", maxHeight: "100%" }} />
+                    </div>
+                </div>
+            ))}
 
-        <Carousel.Item>
-          <img
-            className="caro-block"
-            src="https://cms-contents.pharmeasy.in/banner/374ed4b3c4e-Liveasy_diabetic_Dweb.jpg?dim=1440x0&dpr=1&q=100"
-            alt="Second slide"
-          />
-        </Carousel.Item>
-
-        <Carousel.Item>
-          <img
-            className="caro-block"
-            src="https://cms-contents.pharmeasy.in/banner/c5bfba7b457-Dweb.jpg?dim=1440x0&dpr=1&q=100"
-            alt="Third slide"
-          />
-        </Carousel.Item>
-
-      
-      </Carousel>
-    </div>
+        </Slide>
+    </div >
+</>
+   
   );
 };
