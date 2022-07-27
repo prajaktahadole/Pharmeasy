@@ -19,8 +19,6 @@ import {
  
   
 
-  
-
 const   Category = () =>{
 
     const navigate = useNavigate()
@@ -64,10 +62,10 @@ const   Category = () =>{
                 borderRadius="10px"
                 >
                 <>
-                    <Image src={e.image} alt=""
+                    <Image src={e.cat_img} alt=""
                      className='homeCircleimg'
                      width={"30%"}></Image>
-                    <Text fontSize="md">{e.title}</Text>
+                    <Text fontSize="md">{e.cat_title}</Text>
                     <Text>Upto {e.b1}% off</Text>
                 </>
                 </HStack>

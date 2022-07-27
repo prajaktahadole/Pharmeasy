@@ -16,6 +16,7 @@ const Products = () =>{
   
     const navigate_to_one = useNavigate()
     const navigate = useNavigate()
+    
     useEffect(() => {
       const itemData = async () => {
         let result = await fetch(
